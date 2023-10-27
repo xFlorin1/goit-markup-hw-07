@@ -9,8 +9,7 @@ body {
 /* HEADER SECION */
 
 .hamburger-container {
-  position: absolute;
-  padding: 10px 15px 10px 603px;
+  
 }
 
 .hamburger-container svg {
@@ -29,7 +28,6 @@ body {
   justify-content: center;
   border-bottom: #ececec solid 1px;
   height: 80px;
-  position: relative;
 }
 
 .nav-section-container {
@@ -52,7 +50,8 @@ ul {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  margin: 24px 0px 25px 215px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .logo-section span {
@@ -201,7 +200,7 @@ ul {
   background-color: #188ce8;
 }
 
-/* WHAT WE DO SECTION */ 
+/* WHAT WE DO SECTION */
 
 .what-we-do-container {
   display: none;
@@ -268,7 +267,6 @@ ul {
   letter-spacing: 1.08px;
 }
 
-
 .photo-position {
   display: flex;
   gap: 30px;
@@ -297,6 +295,12 @@ ul {
 }
 
 .team-cards-container {
+  width: 450px;
+  height: 622px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
@@ -305,7 +309,6 @@ ul {
 /* TEAM SECTION */
 
 .our-team-section {
-  height: 708px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,7 +319,6 @@ ul {
   text-align: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .svg-container {
@@ -349,6 +351,9 @@ ul {
 }
 
 .our-team-section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -390,6 +395,8 @@ ul {
   display: flex;
   gap: 30px;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .customers-style h2 {
@@ -406,7 +413,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 372px;
+  height: 519px;
 }
 
 .customers-logo svg {
@@ -430,14 +437,14 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .customers-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  width: 210px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -452,7 +459,7 @@ ul {
 
 .footer-background {
   background: #2f303a;
-  height: 251px;
+  height: 588px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -463,11 +470,21 @@ ul {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 94px;
+  flex-direction: column;
+  row-gap: 60px;
 }
 
-.footer-logo p {
-  margin-left: 215px;
+.social-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-section {
@@ -507,9 +524,9 @@ ul {
 .contacts-footer {
   width: 231px;
   height: 72px;
-  margin-left: 215px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
 
@@ -524,6 +541,13 @@ ul {
 }
 
 /* FIND US ON */
+
+.find-us-on-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .find-us-style {
   font-family: Roboto;
@@ -561,14 +585,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 12px;
-  margin-bottom: 40px;
 }
 
 .newslatter-style {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .newslatter-style h2 {
@@ -587,7 +611,7 @@ ul {
 }
 
 .newslatter-style input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   top: 2787px;
   left: 815px;
@@ -607,17 +631,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
   background-color: #2196f3;
   border-radius: 4px;
-  margin-top: 40px;
 }
 
 .subscribe-button-style {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
   width: 200px;
   height: 50px;
   top: 2787px;
@@ -626,6 +647,8 @@ ul {
   background-color: #2196f3;
   color: #fff;
   border: none;
+  padding: 0;
+  gap: 25px;
 }
 
 .subscribe-button-style:hover {
@@ -1018,12 +1041,38 @@ ul {
     display: block;
     width: 354px;
     height: 251px;
-    
   }
 
   .icons-center {
     width: 354px;
     height: 120px;
+  }
+
+  .team-style {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .team-cards-container {
+    width: 354px;
+    height: 536px;
+  }
+
+  /* CUSTOMERS */
+
+  .logo-icons-style {
+    width: 768px;
+  }
+
+  .customers-logo {
+    width: 200px;
+  }
+
+  /* FOOTER */
+
+  .social-footer {
+    flex-direction: row;
+    gap: 165px;
   }
 }
 
@@ -1084,4 +1133,64 @@ ul {
     display: block;
   }
 
+  /* YOUR TEAM */
+
+  .team-style {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .team-cards-container {
+    width: 270px;
+    height: 428px;
+  }
+
+  /* CUSTOMERS */
+
+  .logo-icons-style {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  /* FOOTER */
+
+  .footer-background {
+    height: 251px;
+  }
+
+  .contacts-footer-container {
+    gap: 93px;
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts-footer {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .find-us-on-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .newslatter-container {
+    flex-direction: row;
+  }
+
+  .newslatter-style input {
+    width: 358px;
+  }
+
+  .subscribe-style {
+    margin-bottom: -40px;
+  }
 }

@@ -22,7 +22,11 @@
       <a href="index.html" class="logo-section">
         <p><span>Web</span>Studio</p>
       </a>
-
+      <div class="hamburger-container">
+        <svg>
+           <use href="./images/symbol-defs.svg#hamburger-icon"></use>
+        </svg>
+     </div>
       <nav>
         <div class="div-list">
           <ul>
@@ -60,11 +64,7 @@
           </li>
         </ul>
       </div>
-      <div class="hamburger-container">
-        <svg>
-           <use href="./images/symbol-defs.svg#hamburger-icon"></use>
-        </svg>
-     </div>
+      
     </header>
     <main>
       <section class="section-background">
@@ -171,24 +171,36 @@
         <ul class="team-style">
           <li class="team-cards-container">
             <picture>
+
               <!-- Desktop -->
-              <!-- <img
-              src="./images/team-card-1.jpg"
-              alt="Product Designer member"
-              width="270" -->
-            />
+             
+            
             <source 
-            media="(min-width: 1158)"
-            srcset="./images/team-card-1-.jpg"
+            media="(min-width: 1158px)"
+            srcset="./images/team-card-1-x1-d.jpg  1x, ./images/team-card-1-x2-d.jpg 2x"
             >
+              
 
             <!-- Tablet -->
 
             <source
-            media="(min-width: 768)"
-            srcset="./images/team-card-2.jpg"
+            media="(min-width: 768px)"
+            srcset="./images/team-card-1-x1-t.jpg 1x, ./images/team-card-1-x2-t.jpg 2x"
             >
 
+            <!-- Mobile -->
+
+            <source
+            media="(min-width: 428px)"
+            srcset="./images/team-card-1-x1-m.jpg 1x, ./images/team-card-1-x2-m.jpg 2x"
+            >
+
+
+            <img
+            src="./images/team-card-1.jpg"
+            alt="Product Designer member"> 
+
+          
             </picture>
             <h3>Christopher Walker</h3>
             <p>Product Designer</p>
@@ -218,11 +230,38 @@
             </div>
           </li>
           <li class="team-cards-container">
+            <picture>
+
+              <!-- Desktop -->
+             
+            
+            <source 
+            media="(min-width: 1158px)"
+            srcset="./images/team-card-2-x1-d.jpg 1x, ./images/team-card-2-x2-d.jpg 2x"
+            >
+              
+
+            <!-- Tablet -->
+
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/team-card-2-x1-t.jpg 1x, ./images/team-card-2-x2-t.jpg 2x"
+            >
+
+            <!-- Mobile -->
+
+            <source
+            media="(min-width: 428px)"
+            srcset="./images/team-card-2-x1-m.jpg 1x, ./images/team-card-2-x2-m.jpg 2x"
+            >        
+
             <img
-              src="./images/team-card-2.jpg"
-              alt="Frontend Developer member"
-              width="270"
-            />
+            src="./images/team-card-2.jpg"
+            alt="Frontend Developer member"
+          />
+          
+            </picture>
+            
             <h3>Kylie Evans</h3>
             <p>Frontend Developer</p>
             <div class="social-icons">
@@ -251,11 +290,38 @@
             </div>
           </li>
           <li class="team-cards-container">
-            <img
+            <picture>
+
+              <!-- Desktop -->
+             
+            
+            <source 
+            media="(min-width: 1158px)"
+            srcset="./images/team-card-3-x1-d.jpg 1x, ./images/team-card-3-x2-d.jpg 2x"
+            >
+              
+
+            <!-- Tablet -->
+
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/team-card-3-x1-t.jpg 1x, ./images/team-card-3-x2-t.jpg 2x"
+            >
+
+            <!-- Mobile -->
+
+            <source
+            media="(min-width: 428px)"
+            srcset="./images/team-card-3-x1-m.jpg 1x, ./images/team-card-3-x2-m.jpg 2x"
+            >        
+
+          <img
               src="./images/team-card-3.jpg"
               alt="Marketing member"
-              width="270"
             />
+          
+            </picture>
+           
             <h3>Ryan Harris</h3>
             <p>Marketing</p>
             <div class="social-icons">
@@ -284,11 +350,37 @@
             </div>
           </li>
           <li class="team-cards-container">
+            <picture>
+
+              <!-- Desktop -->
+             
+            
+            <source 
+            media="(min-width: 1158px)"
+            srcset="./images/team-card-4-x1-d.jpg 1x, ./images/team-card-4-x2-d.jpg 2x"
+            >
+              
+
+            <!-- Tablet -->
+
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/team-card-4-x1-t.jpg 1x, ./images/team-card-4-x2-t.jpg 2x"
+            >
+
+            <!-- Mobile -->
+
+            <source
+            media="(min-width: 428px)"
+            srcset="./images/team-card-4-x1-m.jpg 1x, ./images/team-card-4-x2-m.jpg 2x"
+            >        
+
             <img
-              src="./images/team-card-4.jpg"
-              alt="UI Designer member"
-              width="270"
-            />
+            src="./images/team-card-4.jpg"
+            alt="UI Designer member"
+          />
+            </picture>
+            
             <h3>Tyler Moore</h3>
             <p>UI Designer</p>
             <div class="social-icons">
@@ -357,48 +449,52 @@
 
     <footer class="footer-background">
       <div class="contacts-footer-container">
-        <div class="footer-logo">
-          <a href="index.html" class="footer-section">
-            <p><span>Web</span>Studio</p>
-          </a>
-          <address id="contacts" class="contacts-footer">
-            <p>695 Park Ave, NY 10065, USA</p>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+1212-772-4150">+1 212-772-4150</a>
-          </address>
-        </div>
-        <div>
-          <h2 class="find-us-style">FIND US ON</h2>
-          <div class="social-icons">
-            <div class="social-icons-container">
-              <a href="https://www.instagram.com/">
-                <svg class="icons-footer">
-                  <use
-                    href="./images/symbol-defs.svg#icon-instagram-2svg"
-                  ></use>
-                </svg>
+        <div class="social-footer">
+          <div class="footer-logo">
+            <div>
+              <a href="index.html" class="footer-section">
+                <p><span>Web</span>Studio</p>
               </a>
             </div>
-            <div class="social-icons-container">
-              <a href="https://twitter.com/">
-                <svg class="icons-footer">
-                  <use href="./images/symbol-defs.svg#icon-twitter-1svg"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="social-icons-container">
-              <a href="https://www.facebook.com/">
-                <svg class="icons-footer">
-                  <use href="./images/symbol-defs.svg#icon-facebook-1svg"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="social-icons-container">
-              <a href="https://www.linkedin.com/">
-                <svg class="icons-footer">
-                  <use href="./images/symbol-defs.svg#icon-linkedin-1svg"></use>
-                </svg>
-              </a>
+            <address id="contacts" class="contacts-footer">
+              <p>695 Park Ave, NY 10065, USA</p>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a href="tel:+1212-772-4150">+1 212-772-4150</a>
+            </address>
+          </div>
+          <div class="find-us-on-container">
+            <h2 class="find-us-style">FIND US ON</h2>
+            <div class="social-icons">
+              <div class="social-icons-container">
+                <a href="https://www.instagram.com/">
+                  <svg class="icons-footer">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram-2svg"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="social-icons-container">
+                <a href="https://twitter.com/">
+                  <svg class="icons-footer">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1svg"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="social-icons-container">
+                <a href="https://www.facebook.com/">
+                  <svg class="icons-footer">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1svg"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="social-icons-container">
+                <a href="https://www.linkedin.com/">
+                  <svg class="icons-footer">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1svg"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
