@@ -17,7 +17,7 @@ body {
   height: 40px;
 }
 
-.div-list ul {
+.div-list-container {
   display: none;
 }
 
@@ -25,13 +25,10 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom: #ececec solid 1px;
   height: 80px;
-}
-
-.nav-section-container {
-  display: none;
+  padding: 15px;
 }
 
 ul {
@@ -98,7 +95,7 @@ ul {
   height: 16px;
 }
 
-.contacts-list ul {
+.contacts-list {
   display: none;
 }
 
@@ -994,20 +991,30 @@ ul {
 @media screen and (min-width: 768px) {
   /* HEADER */
 
-  .div-list ul {
+  .div-list-container {
+    display: block;
+  }
+
+  .div-list ul{
     display: flex;
     gap: 50px;
     padding-left: 0px;
-    margin: 32px 0px 32px 93px;
+    flex-direction: row;
   }
 
-  .contacts-list ul {
+  .container-list {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-content: center;
     gap: 40px;
-    margin-left: 385px;
+    flex-direction: row;
   }
+
+  .contacts-list {
+    display: block;
+  }
+
+  
 
   .hamburger-container {
     display: none;
@@ -1081,12 +1088,6 @@ ul {
 @media screen and (min-width: 1158px) {
   /* HEADER */
 
-  .contacts-list ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-left: 385px;
-  }
 
   .section-background {
     background-image: linear-gradient(
@@ -1104,6 +1105,12 @@ ul {
   .tittle-style {
     font-weight: 900;
     line-height: 60px;
+  }
+
+  .contacts-list ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
   }
 
   /* WHAT WE DO SECTION */
