@@ -23,7 +23,7 @@
         <p><span>Web</span>Studio</p>
       </a>
       <div class="hamburger-container">
-        <svg>
+        <svg menu-toggle js-open-menu>
            <use href="./images/symbol-defs.svg#hamburger-icon"></use>
         </svg>
      </div>
@@ -588,13 +588,64 @@
       </div>
     </div>
 
+    <div class="menu-container js-menu-container">
+      <div class="menu-toggle">
+        <div class="close-button-container js-close-menu">
+          <svg>
+            <use href="./images/symbol-defs.svg#icon-close-button"></use>
+          </svg>
+        </div>
+
+        <div class="nav-menu-mobile-container">
+          <nav class="nav-menu-container">
+            <div class="main-navigation pages">
+              <ul>
+                <li>
+                  <a href="index.html" class="nav-menu-section current-mobile">Studio</a>
+                </li>
+                <li>
+                  <a href="portofolio.html" class="nav-menu-section">Portfolio</a>
+                </li>
+                <li><a href="#contacts" class="nav-menu-section">Contacts</a></li>
+              </ul>
+            </div>
+          </nav>
+  
+          <div class="contacts-mobile-section">
+            <ul>
+              <li>
+                <a href="tel:+1212-772-4150" class="telephone-mobile-section">
+                  <span>+1 212-772-4150</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="email-mobile-section">
+                  <span>info@devstudio.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <ul class="social-media-mobile-menu">
+            <li><a href="https://www.instagram.com/" class="social-media-mobile-link">Instagarm</a></li>
+            <li><a href="https://www.twitter.com/" class="social-media-mobile-link">Twitter</a></li>
+            <li><a href="https://www.facebook.com/" class="social-media-mobile-link">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/" class="social-media-mobile-link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+    <script src="./js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
-
-            <!-- MODAL MOBILE -->
-
-     <div class="">
-
-     </div>
-
   </body>
 </html>
