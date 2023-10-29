@@ -392,6 +392,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-inline-start: 0;
 }
 
 .customers-style h2 {
