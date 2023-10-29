@@ -989,7 +989,7 @@ ul {
 
   /* MODAL */
 
-   .modal {
+   /* .modal {
     width: 450px;
   }
 
@@ -1015,19 +1015,19 @@ ul {
    line-height: 24px;
   }
 
-  .send-button {
+  /* .send-button {
     margin-left: 124px;
-  }
+  } */ 
  
 
 /* MOBILE MODAL */
 
-/* .menu-containert {
-  overflow: hidden;
+/* .js-menu-container:not(.is-hidden) {
+  visibility: hidden;
 } */
 
 .js-menu-container {
-  overflow: hidden;
+ overflow: hidden;
 }
 
 .menu-toggle {
