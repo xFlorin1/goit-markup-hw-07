@@ -4,6 +4,8 @@ body {
 
 :root {
   --tranzition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --desktop-max-width: 1170px;
+  --tablet-max-width: 738px;
 }
 
 /* HEADER SECION */
@@ -821,7 +823,7 @@ ul {
   padding: 40px;
 }
 
-.modal-content h3 {
+.modal-title {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
@@ -984,6 +986,10 @@ ul {
 }
 
 /* MOBILE MODAL */
+
+.menu-container:not(.is-hidden){
+  animation: fadeIn 250ms ease-in-out;
+}
 
 .menu-toggle {
   display: flex;
@@ -1316,4 +1322,33 @@ ul {
   .subscribe-style {
     margin-bottom: -40px;
   }
+
+  /* MODAL */
+
+  .modal-title {
+    width: 448px;
+  }
+
+  .modal-content {
+    width: 528px;
+    height: 581px;
+  }
+
+  .style-input {
+    width: 448px;
+  }
+
+  .style-textarea {
+    width: 448px;
+  }
+
+  .terms-container p {
+   font-size: 14px;
+   line-height: 24px;
+  }
+
+  .send-button {
+    margin-left: 124px;
+  }
+
 }

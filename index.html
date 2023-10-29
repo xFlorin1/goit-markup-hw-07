@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="container-list">
+    <header class="container-list max-width">
       <a href="index.html" class="logo-section">
         <p><span>Web</span>Studio</p>
       </a>
@@ -526,76 +526,79 @@
             ></use>
           </svg>
         </div>
-        <h3>Leave your information and we'll call you back</h3>
-        <form action="" method="get" class="contact-form">
-          <div class="form-section">
-            <label for="name">Name</label>
-            <div class="input-container">
-              <input class="style-input" type="text" id="name" />
-              <svg>
-                <use
-                  href="./images/symbol-defs.svg#icon-person-black-18dp-1svg"
-                ></use>
-              </svg>
+        <div class="modal-container">
+          <h3 class="modal-title">Leave your information and we'll call you back</h3>
+          <form action="" method="get" class="contact-form">
+            <div class="form-section">
+              <label for="name">Name</label>
+              <div class="input-container">
+                <input class="style-input" type="text" id="name" />
+                <svg>
+                  <use
+                    href="./images/symbol-defs.svg#icon-person-black-18dp-1svg"
+                  ></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="form-section">
-            <label for="Telephone">Telephone</label>
-            <div class="input-container">
-              <input class="style-input" type="number" id="Telephone" />
-              <svg>
-                <use
-                  href="./images/symbol-defs.svg#icon-phone-black-18dp-1svg"
-                ></use>
-              </svg>
+            <div class="form-section">
+              <label for="Telephone">Telephone</label>
+              <div class="input-container">
+                <input class="style-input" type="number" id="Telephone" />
+                <svg>
+                  <use
+                    href="./images/symbol-defs.svg#icon-phone-black-18dp-1svg"
+                  ></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="form-section">
-            <label for="E-mail">E-mail</label>
-            <div class="input-container">
-              <input class="style-input" type="email" id="E-mail" />
-              <svg>
-                <use
-                  href="./images/symbol-defs.svg#icon-email-black-18dp-1svg"
-                ></use>
-              </svg>
+            <div class="form-section">
+              <label for="E-mail">E-mail</label>
+              <div class="input-container">
+                <input class="style-input" type="email" id="E-mail" />
+                <svg>
+                  <use
+                    href="./images/symbol-defs.svg#icon-email-black-18dp-1svg"
+                  ></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="textarea-container">
-            <label for="Comments">Comments</label>
-            <textarea
-              class="style-textarea"
-              name="Comments"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Enter the text"
-            ></textarea>
-          </div>
-          <div class="terms-container">
-            <label for="checkbox-overall">
-               <svg>
-                 <use href="./images/symbol-defs.svg#icon-checkedNO"></use>
-               </svg>
-               <input type="checkbox" id="checkbox-overall" />
-               <p>I agree with the letter and accept the <a href="#">Terms and Conditions</a></p>
-             </label>
-          </div>
-          <div class="send-button-container">
-            <button class="send-button">Send</button>
-          </div>
-        </form>
+            <div class="textarea-container">
+              <label for="Comments">Comments</label>
+              <textarea
+                class="style-textarea"
+                name="Comments"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Enter the text"
+              ></textarea>
+            </div>
+            <div class="terms-container">
+              <label for="checkbox-overall">
+                 <svg>
+                   <use href="./images/symbol-defs.svg#icon-checkedNO"></use>
+                 </svg>
+                 <input type="checkbox" id="checkbox-overall" />
+                 <p>I agree with the letter and accept the <a href="#">Terms and Conditions</a></p>
+               </label>
+            </div>
+            <div class="send-button-container">
+              <button class="send-button">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
-    <div class="menu-container js-menu-container">
+      <!-- MENU MODAL -->
+
+    <div class="menu-container js-menu-container ">
       <div class="menu-toggle">
         <div class="close-button-container js-close-menu">
           <svg>
             <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1svg"></use>
           </svg>
         </div>
-
         <div class="nav-menu-mobile-container">
           <nav class="nav-menu-container">
             <div class="main-navigation pages">
