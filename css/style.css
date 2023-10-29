@@ -294,7 +294,6 @@ ul {
   width: 450px;
   height: 622px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   box-shadow: 0px 2px 1px 0px #00000033;
@@ -409,7 +408,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 519px;
+  padding-bottom: 60px;
 }
 
 .customers-logo svg {
@@ -607,7 +606,7 @@ ul {
 }
 
 .newslatter-style input {
-  width: 450px;
+  width: min(90vw, 22.375rem);
   height: 50px;
   top: 2787px;
   left: 815px;
@@ -782,6 +781,8 @@ ul {
   line-height: 30px;
   letter-spacing: 0.48px;
 }
+
+ 
 
 /* MODAL */
 
@@ -985,10 +986,47 @@ ul {
   background-color: #2196f3;
 }
 
+  /* MODAL */
+
+   .modal {
+    width: 450px;
+  }
+
+  .modal-title {
+    width: 448px;
+  }
+
+  .modal-content {
+    width: 528px;
+    height: 581px;
+  }
+
+  .style-input {
+    width: 448px;
+  }
+
+  .style-textarea {
+    width: 448px;
+  }
+
+  .terms-container p {
+   font-size: 14px;
+   line-height: 24px;
+  }
+
+  .send-button {
+    margin-left: 124px;
+  }
+ 
+
 /* MOBILE MODAL */
 
-.menu-container:not(.is-hidden){
-  animation: fadeIn 250ms ease-in-out;
+/* .menu-containert {
+  overflow: hidden;
+} */
+
+.js-menu-container {
+  overflow: hidden;
 }
 
 .menu-toggle {
@@ -1163,7 +1201,7 @@ ul {
     flex-wrap: wrap;
     width: 742px;
     gap: 30px;
-    padding: 0;
+    padding-inline-start: 0;
   }
 
   .details-content li {
@@ -1321,34 +1359,6 @@ ul {
 
   .subscribe-style {
     margin-bottom: -40px;
-  }
-
-  /* MODAL */
-
-  .modal-title {
-    width: 448px;
-  }
-
-  .modal-content {
-    width: 528px;
-    height: 581px;
-  }
-
-  .style-input {
-    width: 448px;
-  }
-
-  .style-textarea {
-    width: 448px;
-  }
-
-  .terms-container p {
-   font-size: 14px;
-   line-height: 24px;
-  }
-
-  .send-button {
-    margin-left: 124px;
   }
 
 }
