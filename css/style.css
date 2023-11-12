@@ -817,8 +817,7 @@ ul {
 }
 
 .modal-content {
-  width: 528px;
-  height: 581px;
+  width: 100%;
   border-radius: 4px;
   background: #fff;
   position: relative;
@@ -894,7 +893,7 @@ ul {
 }
 
 .textarea-container textarea {
-  width: 448px;
+  width: 300px;
   height: 120px;
   top: 519px;
   left: 576px;
@@ -915,7 +914,7 @@ ul {
 }
 
 .terms-container svg {
-  width: 16px;
+  width: 1px;
   height: 15px;
 }
 
@@ -936,12 +935,14 @@ ul {
 }
 .modal-content form label svg {
   position: absolute;
-  top: 18.5px;
+  top: 30.5px;
   left: 0;
   width: 16px;
   height: 15px;
 }
 .modal-content form label input {
+  display: flex;
+  justify-content: center;
   width: 16px;
   height: 16px;
   accent-color: #2196f3;
@@ -986,39 +987,6 @@ ul {
   box-shadow: 0px 4px 4px 0px #00000026;
   background-color: #2196f3;
 }
-
-  /* MODAL */
-
-   /* .modal {
-    width: 450px;
-  }
-
-  .modal-title {
-    width: 448px;
-  }
-
-  .modal-content {
-    width: 528px;
-    height: 581px;
-  }
-
-  .style-input {
-    width: 448px;
-  }
-
-  .style-textarea {
-    width: 448px;
-  }
-
-  .terms-container p {
-   font-size: 14px;
-   line-height: 24px;
-  }
-
-  /* .send-button {
-    margin-left: 124px;
-  } */ 
- 
 
 /* MOBILE MODAL */
 
@@ -1134,7 +1102,7 @@ ul {
 .social-media-mobile-menu li {
   display: flex;
   border-right: 1px solid rgba(33, 33, 33, 0.20);
-  padding-right: 10px;
+  padding-right: 4px;
 }
 
 .social-media-mobile-menu li:last-child {
@@ -1142,7 +1110,7 @@ ul {
 }
 
 .social-media-mobile-menu {
-  gap: 10px;
+  gap: 4px;
   display: flex;
 }
 
@@ -1242,6 +1210,30 @@ ul {
     flex-direction: row;
     gap: 165px;
   }
+
+  /* MODAL */
+
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    margin: 0;
+  }
+
+  .modal-content form label svg {
+    position: absolute;
+    top: 18.5px;
+    left: 0;
+    width: 16px;
+    height: 15px;
+}
+
+  .textarea-container textarea {
+    width: 611px;
+  }
+
+  
 }
 
 /* DESKTOP */
@@ -1361,5 +1353,46 @@ ul {
   .subscribe-style {
     margin-bottom: -40px;
   }
+
+  /* MODAL */
+
+  .modal-title {
+    width: 448px;
+  }
+
+  .modal-content {
+    width: 528px;
+    height: 581px;
+  }
+
+  .style-input {
+    width: 448px;
+  }
+
+  .style-textarea {
+    width: 448px;
+  }
+
+  .terms-container p {
+   font-size: 14px;
+   line-height: 24px;
+  }
+
+  .textarea-container textarea {
+    width: 448px;
+  }
+
+ .send-button {
+    margin-left: 124px;
+  } 
+
+  .modal-content form label svg {
+    position: absolute;
+    top: 18.5px;
+    left: 0px;
+    width: 16px;
+    height: 15px;
+}
+  
 
 }
